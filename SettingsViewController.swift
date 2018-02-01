@@ -39,11 +39,18 @@ class SettingsViewController: UIViewController {
         {
             theme = UIColor.black
             for label in settingsLabels
+            {
+                label.textColor = UIColor.white
+            }
             
         }
         else
         {
             theme = UIColor.gray
+            for label in settingsLabels
+            {
+                label.textColor = UIColor.green
+            }
         }
         view.backgroundColor = theme // change background color once user selects
     }
