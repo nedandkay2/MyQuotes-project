@@ -53,6 +53,9 @@
                     <tabBarItem key="tabBarItem" title="Quotes" image="file-2" id="XCq-8E-K5A"/>
                     <connections>
                         <outlet property="quoteImgView" destination="TmU-bI-pjo" id="vjh-4k-p68"/>
+                        <outletCollection property="homeButtons" destination="Za5-uO-XdX" collectionClass="NSMutableArray" id="tHv-Io-F03"/>
+                        <outletCollection property="homeButtons" destination="yfR-9h-Afx" collectionClass="NSMutableArray" id="Ave-bD-Emh"/>
+                        <outletCollection property="homeButtons" destination="o2b-YY-gWm" collectionClass="NSMutableArray" id="bTo-d2-dLh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kS-VH-G7x" userLabel="First Responder" sceneMemberID="firstResponder"/>

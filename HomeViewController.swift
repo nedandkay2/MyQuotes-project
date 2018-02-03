@@ -8,21 +8,35 @@
 
 import UIKit
 
-/// global variable declared for all VCs
+/// global variables declared for all VCs
 var theme: UIColor = UIColor.black
+var imageBoarder = false
 
 class HomeViewController: UIViewController {
     
     
     @IBOutlet weak var quoteImgView: UIImageView!
     
+    @IBOutlet var homeButtons: [UIButton]!
+    
     var quoteArray = ["quote0", "quote1", "quote2", "quote3","quote4","quote5","quote6","quote7","quote8", "quote9"]
     var arrayIndex = 0
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(animated)
         
         view.backgroundColor = theme
+        
+        if imageBoarder
+        {
+            quoteImgView.layer.borderColor = UIColor.red.cgColor
+            quoteImgView.layer.borderWidth = 5.0
+        }
+        else
+        {
+            quoteImgView.layer.borderWidth = 0
+        }
     }
     
     override func viewDidLoad() {

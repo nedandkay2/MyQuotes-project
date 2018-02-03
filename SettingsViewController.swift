@@ -66,6 +66,15 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func switchChanged(_ sender: Any) {
+        
+        if switchBoarder.isOn
+        {
+            imageBoarder = true
+        }
+        else
+        {
+            imageBoarder = false
+        }
     }
     
     @IBAction func stepperChanged(_ sender: Any) {
